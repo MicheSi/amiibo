@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {getAmiibos} from '../actions';
 import {
     Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle
+    CardTitle
   } from 'reactstrap'
 
 const AmiibosList = props => {

@@ -6,7 +6,7 @@ const SearchForm = props => {
     const [character, setCharacter] = useState('')
 
     const handleChanges = e => {
-        setCharacter( {
+        setCharacter({
             ...character,
             [e.target.name]: e.target.value
         })
@@ -15,7 +15,7 @@ const SearchForm = props => {
     const handleSubmit = e => {
         e.preventDefault();
         props.getCharacter(character)
-        setCharacter('')
+        setCharacter({character: ''})
     }
 
     return (
