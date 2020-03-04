@@ -1,38 +1,30 @@
+html, body {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.amiibosList {
+  margin-top: 4%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  width: 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.amiibo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 2% 1%;
+  padding: 2% 0 1%;
 }
