@@ -32,7 +32,7 @@ const SearchForm = props => {
                      onChange={handleChanges}
                     />
                 </FormGroup>
-                <Button>Submit</Button>
+                <Button color='primary'>Submit</Button>
             </Form>
         </div>
     )
