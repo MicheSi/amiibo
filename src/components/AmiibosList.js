@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {getAmiibos} from '../actions';
-import AmiiboCard from './Amiibos';
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle
@@ -10,11 +9,10 @@ import {
 const AmiibosList = props => {
     return (
         <div className='amiibosList'>
-            <button onClick={props.getAmiibos}>Get Amiibos</button>
             <div className='amiibo'>
             {props.amiibo.map(amiibo => (
                 <Card key={amiibo.name}>
-                    <CardImg top width="100%" src={amiibo.image} alt="amiibo image" />
+                    <CardImg top width="10%" src={amiibo.image} alt="amiibo image" />
                     <CardBody>
                         <CardTitle>Amiibo Name: {amiibo.name}</CardTitle>
                         <CardSubtitle>Character: {amiibo.character}</CardSubtitle>
