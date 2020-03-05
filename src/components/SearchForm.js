@@ -24,6 +24,7 @@ const SearchForm = props => {
                 <FormGroup>
                     <Label for='character'>Search for Amiibos</Label>
                     <Input
+                     required
                      type='text'
                      name='character'
                      id='character'
