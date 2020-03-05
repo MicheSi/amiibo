@@ -24,7 +24,7 @@ const AmiibosList = props => {
             )}
             <div className='amiibo'>
             {props.amiibo.map(amiibo => (
-                <Card key={amiibo.name}>
+                <Card key={amiibo.index}>
                     <CardBody>
                         <CardImg top width="100%" className='amiiboImg' src={amiibo.image} alt="amiibo image" />
                         <CardTitle>Amiibo Name: {amiibo.name}</CardTitle>
