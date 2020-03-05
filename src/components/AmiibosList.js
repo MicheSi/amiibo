@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { Spinner } from 'reactstrap';
 import {getAmiibos} from '../actions';
 import {
     Card, CardImg, CardText, CardBody,
@@ -9,6 +10,18 @@ import {
 const AmiibosList = props => {
     return (
         <div className='amiibosList'>
+            {props.isLoading && (
+                <div>
+                    <Spinner color="primary" />
+                    <Spinner color="secondary" />
+                    <Spinner color="success" />
+                    <Spinner color="danger" />
+                    <Spinner color="warning" />
+                    <Spinner color="info" />
+                    <Spinner color="light" />
+                    <Spinner color="dark" />
+                </div>
+            )}
             <div className='amiibo'>
             {props.amiibo.map(amiibo => (
                 <Card key={amiibo.name}>
