@@ -55,3 +55,13 @@ body {
 label {
   font-size: larger;
 }
+
+@media (max-width: 430px) {
+  label {
+    font-size: 18px;
+  }
+
+  .searchForm {
+    width: 50%;
+  }
+}

@@ -28,7 +28,7 @@ const SearchForm = props => {
                      type='text'
                      name='character'
                      id='character'
-                     placeholder='Search Amiibo'
+                     placeholder='Character Name'
                      value={character.character}
                      onChange={handleChanges}
                     />
